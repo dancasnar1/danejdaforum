@@ -26,7 +26,7 @@ public class ThreadController {
     }
 	
 	
-	@GetMapping("/")
+	@GetMapping("/threads")
     public List<Thread> findAllThreads() {
         return threadService.findAllThreads();
     }

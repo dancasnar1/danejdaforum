@@ -25,7 +25,7 @@ public class PostController {
         this.postService = postService;
     }
     
-	@GetMapping("/{threadId}")
+	@GetMapping("/posts")
     public List<Post> findAllPostsByThreadId(@PathVariable("threadId") int threadId) {
         return postService.findAllPostsByThreadId(threadId);
     }
