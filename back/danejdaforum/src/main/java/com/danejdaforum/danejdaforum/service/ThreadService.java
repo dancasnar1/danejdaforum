@@ -25,10 +25,6 @@ public class ThreadService {
 	public List<Thread> findAllThreads() {
 		return threadRepository.findAllThreads();
 	}
-    /*
-    @Transactional()
-    public void addPost(Post post) {
-    	threadRepository.addPost(post);
-    }*/
+   
     
 }

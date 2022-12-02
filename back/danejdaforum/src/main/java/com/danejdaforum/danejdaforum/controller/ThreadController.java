@@ -30,14 +30,5 @@ public class ThreadController {
     public List<Thread> findAllThreads() {
         return threadService.findAllThreads();
     }
-	/*
-	@PostMapping("/new")
-    public String findAllThreads(@Valid Post post) {
-		if (post.getId() == null || postService.findPostByTitle(post.getTitle()) != null) {
-			return null;
-		}
-		threadService.addPost(post);
-		return "/";
-    }
-	*/
+	
 }

@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.danejdaforum.danejdaforum.model.Post;
 import com.danejdaforum.danejdaforum.repository.PostRepository;
+import com.house3sum.backTest.model.Task;
 
 @Service
 public class PostService {
@@ -25,17 +26,16 @@ public class PostService {
 	public List<Post> findAllPostsByThreadId(int threadId) {
 		return postRepository.findAllPostsByThreadId(threadId);
 	}
-    /*
     
     @Transactional(readOnly = true)
 	public Post findPostByTitle(String title) {
-		return postRepository.findPostByTitle(title);
+    	List<Post> postsRes = postRepository.findPostByTitle(title);
+		return postsRes.get(0);
 	}
     
     @Transactional()
-	public void addPost(Post post){
-    	postRepository.addPost(post);
+    public void addPost(Post post) {
+    	postRepository.insert(post);
 	}
-    */
     
 }

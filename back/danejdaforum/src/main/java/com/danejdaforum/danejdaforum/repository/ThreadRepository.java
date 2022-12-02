@@ -15,8 +15,5 @@ public interface ThreadRepository extends MongoRepository<Thread, Long>{
 	@Query("{}")
 	List<Thread> findAllThreads();
 	
-	/*
-	//void addPost(Post post);
-	 *
-	 */
+
 }
