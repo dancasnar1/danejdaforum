@@ -11,14 +11,16 @@ import com.danejdaforum.danejdaforum.repository.PostRepository;
 
 @Service
 public class PostService {
+	@Autowired
+	PostRepository postRepository;
 
-	private final PostRepository postRepository;
-
+	
     @Autowired
     public PostService(final PostRepository postRepository) {
         this.postRepository = postRepository;
     }
-    
+	
+    /*
     @Transactional(readOnly = true)
 	public List<Post> findAllPostsByThreadId(int threadId) {
 		return postRepository.findAllPostsByThreadId(threadId);
@@ -33,5 +35,6 @@ public class PostService {
 	public void addPost(Post post){
     	postRepository.addPost(post);
 	}
+    */
     
 }
