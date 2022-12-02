@@ -25,13 +25,17 @@ public class PostService {
 	public List<Post> findAllPostsByThreadId(int threadId) {
 		return postRepository.findAllPostsByThreadId(threadId);
 	}
-    /*
+    
     
     @Transactional(readOnly = true)
 	public Post findPostByTitle(String title) {
 		return postRepository.findPostByTitle(title);
 	}
     
+    public void insertPost(Post post) {
+    	postRepository.insert(post);
+	}
+    /*
     @Transactional()
 	public void addPost(Post post){
     	postRepository.addPost(post);
