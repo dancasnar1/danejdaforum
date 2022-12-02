@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.danejdaforum.danejdaforum.repository.ThreadRepository;
-
+import com.danejdaforum.danejdaforum.model.Thread;
 
 @Service
 public class ThreadService {
@@ -20,7 +20,7 @@ public class ThreadService {
         this.threadRepository = threadRepository;
     }
     
-   
+    
     @Transactional(readOnly = true)
 	public List<Thread> findAllThreads() {
 		return threadRepository.findAllThreads();

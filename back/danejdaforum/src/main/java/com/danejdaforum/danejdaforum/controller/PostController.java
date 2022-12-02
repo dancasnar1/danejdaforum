@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.danejdaforum.danejdaforum.model.Post;
 import com.danejdaforum.danejdaforum.service.PostService;
 
 @Controller
@@ -24,10 +25,9 @@ public class PostController {
         this.postService = postService;
     }
     
-    /*
 	@GetMapping("/{threadId}")
     public List<Post> findAllPostsByThreadId(@PathVariable("threadId") int threadId) {
         return postService.findAllPostsByThreadId(threadId);
-    }*/
+    }
 	
 }

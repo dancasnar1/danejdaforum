@@ -20,11 +20,12 @@ public class PostService {
         this.postRepository = postRepository;
     }
 	
-    /*
+    
     @Transactional(readOnly = true)
 	public List<Post> findAllPostsByThreadId(int threadId) {
 		return postRepository.findAllPostsByThreadId(threadId);
 	}
+    /*
     
     @Transactional(readOnly = true)
 	public Post findPostByTitle(String title) {

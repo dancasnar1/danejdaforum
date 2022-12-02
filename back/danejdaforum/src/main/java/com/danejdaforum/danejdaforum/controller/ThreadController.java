@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.danejdaforum.danejdaforum.service.PostService;
 import com.danejdaforum.danejdaforum.service.ThreadService;
+import com.danejdaforum.danejdaforum.model.Thread;
 
 @Controller
 public class ThreadController {

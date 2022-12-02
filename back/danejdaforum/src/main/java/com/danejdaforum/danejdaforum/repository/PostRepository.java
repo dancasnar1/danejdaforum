@@ -11,11 +11,10 @@ import com.danejdaforum.danejdaforum.model.Post;
 
 @Repository
 public interface PostRepository extends MongoRepository<Post, Long>{
-   /*
-	void addPost(Post post);
 	
 	List<Post> findAllPostsByThreadId(int threadId);
-	
+   /*
+	void addPost(Post post);
 	Post findPostByTitle(String title);
 	*/
 }
