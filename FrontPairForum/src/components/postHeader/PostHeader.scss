@@ -1,0 +1,36 @@
+@import '../../vars.scss';
+
+.postHeader{
+    background-color: #fff;
+    border-left: 4px solid $main-color;
+    display: flex;
+    flex-direction: row;
+}
+.postHeaderLeftDiv{
+    width: 10%;
+}
+.postHeaderCenterDiv{
+    padding: 0px 5px;
+    width: 65%;
+    color: $main-color;
+}
+.postHeaderRightDiv{
+    width: 25%;
+}
+.titleDiv{
+    text-align: left;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $main-color;
+}
+.categoryDiv{
+    margin-top: 4px;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    text-align: left;
+    color: $subtitle-color;
+}
+.imagePostHeader{
+    border-radius: 50px;
+}

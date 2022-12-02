@@ -1,0 +1,13 @@
+.title{
+  color: rgb(0, 0, 0);
+  font-size: 2vh;
+  font-weight: 600;
+  text-decoration-line: none;
+}
+.title:hover, .title:focus-within{
+  text-decoration-line: none;
+}
+.card-header{
+  background-color: #BDE0FE;
+  color: #CDB4DB;
+}
