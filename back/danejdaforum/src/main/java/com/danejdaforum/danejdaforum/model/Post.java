@@ -38,6 +38,13 @@ public class Post {
 		this.thread = thread;
 	}
 
+	public Post(String title2, String content2, String category2, String imageUrl2) {
+		this.title = title;
+		this.content = content;
+		this.category = category;
+		this.imageUrl = imageUrl;
+	}
+
 	public Long getId() {
 		return id;
 	}
