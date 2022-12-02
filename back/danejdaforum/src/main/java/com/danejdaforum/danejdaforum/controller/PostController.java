@@ -37,7 +37,6 @@ public class PostController {
     public ResponseEntity<Post> findPostByTitle(@PathVariable String title) {
 		return new ResponseEntity<>(this.postService.findPostByTitle(title), HttpStatus.OK);
     }
-	
 	@PostMapping(value = "{threadId}/posts")
 	public Post createTask(@RequestParam(name = "threadId") int threadId, @RequestParam(name = "title") String title,
 			@RequestParam(name = "content") String content, @RequestParam(name = "category") String category,
@@ -45,7 +44,7 @@ public class PostController {
 
 		Post post = new Post(title, content, category, imageUrl);
 
-		this.service.insertPost(post);
+		this.postService.insertPost(post);
 		return post;
 	}
 	
